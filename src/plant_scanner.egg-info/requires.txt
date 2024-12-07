@@ -1,0 +1,2 @@
+pydanticpydantic==2.10.3
+pillow==11.0.0
