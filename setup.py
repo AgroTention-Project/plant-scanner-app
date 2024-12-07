@@ -18,7 +18,7 @@ setup(
     # Python Requires
     python_requires = ">=3.12",
     install_requires=[
-        "pydanticpydantic==2.10.3",
+        "pydantic==2.10.3",
         "pillow==11.0.0"
     ],
 
