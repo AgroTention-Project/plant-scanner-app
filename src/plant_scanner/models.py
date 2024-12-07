@@ -25,9 +25,13 @@ class Result(BaseModel):
     scan result model
     """
 
-    user_id: str
+    user_id: Optional[str] = None
     plant_slug: str
     is_healthy: bool
     disease_slug: Optional[str] = None
     box: BoxModel
     scanned_at: Optional[int] = int(datetime.datetime.now().timestamp())
+
+    def set_owner(self, user_id: str):
+        '''set result owner'''
+        self.user_id = user_id
