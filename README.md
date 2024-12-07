@@ -12,6 +12,10 @@
 - Pastikan versi `tensorflow` terdefinisi lengkap di `requirements.txt` atau `Pipfile`
 - Gunakan git tag untuk versi library
 - Konfigurasi `setup.py`
+- Pastikan library bisa di build dengan:
+```bash
+python setup.py sdist bdist_wheel
+```
 - Pastikan library bisa diinstal dengan:
 ```bash
 pip install git+https://github.com/AgroTention-Project/plant-scanner-app.git
